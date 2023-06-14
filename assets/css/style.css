@@ -8,10 +8,26 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(120deg, #21002ed8, #000000da);
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #bd0909, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .relogio {
